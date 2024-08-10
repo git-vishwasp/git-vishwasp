@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Vishwas
-- 👀 I’m interested in Emerging Techn
+- 👀 I’m interested in Emerging Tech
 - 🌱 I’m currently learning Generative AI
 - 📫 Reach me at: mail.vishwasp@gmail.com
 

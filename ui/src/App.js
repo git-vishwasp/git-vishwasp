@@ -58,11 +58,11 @@ function App() {
               <p className="mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed w-full">
                 With over 15 years of experience in technology leadership, I specialize in building 
                 innovative products that solve complex business problems. My expertise spans 
-                across leading global teams across Point of Sale Systems, Order Management Systems, Service Management Systems, AI/ML, 
-                Cloud architecture, and Digital transformation.  
+                leading global teams in Point of Sale systems, Order Management systems, Service Management Systems, AI/ML, 
+                Cloud Architecture, and Digital Transformation.  
               </p>
               <p className="mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed w-full">
-                Feel free to schedule a call to discuss how I can help your business and go over my portfolio projects which I build during my free time.
+                Feel free to schedule a call to discuss potential opportunities and explore my portfolio projects, which showcase my problem-solving approach. I'd be happy to walk you through my development process and implementation details.
               </p>
               
               <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
@@ -76,6 +76,12 @@ function App() {
                    className="p-2 bg-glass-light dark:bg-glass-dark rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                   <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </a>
+                <a href="tel:+12146816166" 
+                   className="p-2 bg-glass-light dark:bg-glass-dark rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                   </svg>
                 </a>
               </div>
@@ -155,7 +161,7 @@ function App() {
               </div>
             </div>
 
-            {/* SmartHome Hub Project - Future Project */}
+            {/* AI Meeting Assistant Project - Future Project */}
             <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
                            rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
                            hover:border-accent/30 transition-all duration-300 h-full
@@ -165,95 +171,48 @@ function App() {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  SmartHome Hub
+                  AI Meeting Assistant
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                  A centralized IoT platform that seamlessly integrates various smart home devices. 
-                  Features include automated routines, energy optimization, and AI-powered security monitoring.
+                  An intelligent meeting assistant that leverages advanced AI to transform business meetings. 
+                  Features automated transcription, smart summaries, sentiment analysis, and AI-powered 
+                  insights for better decision-making and follow-up actions.
                 </p>
                 
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Multi-device Integration
+                    Real-time Meeting Transcription
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Energy Usage Analytics
+                    AI-powered Meeting Summaries
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    AI Security Monitoring
+                    Sentiment Analysis & Insights
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Voice Control Integration
+                    Sales Opportunity Detection
                   </div>
                 </div>
 
                 <div>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Flutter</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Go</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">MQTT</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">TensorFlow Lite</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Firebase</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* HealthTrack AI Project - Future Project */}
-            <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
-                           rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
-                           hover:border-accent/30 transition-all duration-300 h-full
-                           relative opacity-75 hover:opacity-100">
-              <div className="absolute top-3 right-3 bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
-                Coming Soon
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  HealthTrack AI
-                </h3>
-                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                  A mobile health monitoring system that uses machine learning to provide personalized health insights 
-                  and early warning detection for potential health issues based on wearable device data.
-                </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                    <span className="text-accent">✓</span>
-                    Real-time Health Monitoring
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                    <span className="text-accent">✓</span>
-                    Predictive Health Alerts
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                    <span className="text-accent">✓</span>
-                    Personalized Health Insights
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                    <span className="text-accent">✓</span>
-                    Healthcare Provider Integration
-                  </div>
-                </div>
-
-                <div>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Swift</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">React</span>
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Python</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">CoreML</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">HealthKit</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">AWS</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">OpenAI</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Whisper</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">WebRTC</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">MongoDB</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* CodeMentor AI Project - Future Project */}
+            {/* AI Study Buddy Project - Future Project */}
             <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
                            rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
                            hover:border-accent/30 transition-all duration-300 h-full
@@ -263,30 +222,30 @@ function App() {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  CodeMentor AI
+                  AI Study Buddy
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                  An AI-powered coding assistant that helps developers learn and improve their coding skills. 
-                  Features include real-time code analysis, personalized learning paths, and interactive 
-                  problem-solving sessions.
+                  A personalized AI-powered learning companion that revolutionizes how students study. 
+                  Features adaptive learning paths, smart quiz generation, and intelligent topic analysis 
+                  to optimize study efficiency and improve learning outcomes.
                 </p>
                 
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Intelligent Code Review
+                    Adaptive Learning Pathways
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Personalized Learning Paths
+                    AI-Generated Smart Quizzes
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Interactive Coding Challenges
+                    Interactive AI Flashcards
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                     <span className="text-accent">✓</span>
-                    Multi-language Support
+                    Weakness Detection & Analysis
                   </div>
                 </div>
 
@@ -294,10 +253,113 @@ function App() {
                   <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Next.js</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">TypeScript</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Python</span>
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">OpenAI</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">TensorFlow</span>
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">PostgreSQL</span>
-                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Docker</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Redis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* AI Language & Cultural Assistant Project - Future Project */}
+            <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
+                           rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
+                           hover:border-accent/30 transition-all duration-300 h-full
+                           relative opacity-75 hover:opacity-100">
+              <div className="absolute top-3 right-3 bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
+                Coming Soon
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+                  AI Language & Cultural Assistant
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                  An advanced AI-powered companion for language learning and cultural understanding. 
+                  Combines AR technology, real-time translation, and cultural insights to create an 
+                  immersive language learning and cultural adaptation experience.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    AR-Enhanced Visual Translation
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Real-time Voice Translation
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Cultural Context & Etiquette
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    AI Conversation Practice
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">React Native</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Python</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">OpenAI</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">ARKit/ARCore</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">TensorFlow</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Trip Genie Project - Future Project */}
+            <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
+                           rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
+                           hover:border-accent/30 transition-all duration-300 h-full
+                           relative opacity-75 hover:opacity-100">
+              <div className="absolute top-3 right-3 bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
+                Coming Soon
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+                  Trip Genie
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                  An AI-powered travel companion that creates personalized travel itineraries based on your preferences. 
+                  Leverages LLM technology to consider factors like duration, group size, age groups, and interests to 
+                  craft the perfect travel experience.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Personalized Itinerary Generation
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Smart Budget Planning
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Activity & Restaurant Recommendations
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Export & Share Features
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Next.js</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Node.js</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">OpenAI</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">MongoDB</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Google Maps API</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Firebase</span>
                   </div>
                 </div>
               </div>

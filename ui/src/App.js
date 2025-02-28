@@ -99,13 +99,76 @@ function App() {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {/* Salescout Project - Current Project */}
+            {/* QNote.ai Project - Current Project */}
             <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
                            rounded-xl sm:rounded-2xl border-2 border-accent 
                            hover:border-accent/70 transition-all duration-300 h-full
                            relative overflow-hidden">
               <div className="absolute top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded-full">
                 Current Project
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+                  QNote.ai
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                  A next-generation AI-powered note-taking and task management app designed for professionals, 
+                  families, and productivity enthusiasts. Seamlessly combines intelligent note organization, 
+                  AI-driven task prioritization, and smart reminders into a single, easy-to-use platform.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    AI-Powered Note Organization
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Intelligent Task Automation
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Semantic Search & Smart Tagging
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Seamless Cross-Platform Experience
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">React</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">React Native</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Firebase</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Pinecone</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Stripe</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Google Gemini</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Whisper API</span>
+                  </div>
+                </div>
+
+                <div>
+                  <a href="/qnote-ai" 
+                     className="inline-flex items-center px-4 py-2 bg-accent hover:bg-accent-light text-white 
+                              text-sm font-semibold rounded-lg transition-colors duration-300 gap-2">
+                    View Project Details
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Salescout Project - Future Project */}
+            <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
+                           rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
+                           hover:border-accent/30 transition-all duration-300 h-full
+                           relative opacity-75 hover:opacity-100">
+              <div className="absolute top-3 right-3 bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
+                Coming Soon
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
@@ -146,17 +209,6 @@ function App() {
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">AWS</span>
                     <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">MongoDB</span>
                   </div>
-                </div>
-
-                <div>
-                  <a href="/salescout" 
-                     className="inline-flex items-center px-4 py-2 bg-accent hover:bg-accent-light text-white 
-                              text-sm font-semibold rounded-lg transition-colors duration-300 gap-2">
-                    View Project Details
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
@@ -263,7 +315,7 @@ function App() {
               </div>
             </div>
 
-            {/* AI Language & Cultural Assistant Project - Future Project */}
+            {/* Travel Buddy Project - Future Project */}
             <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
                            rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
                            hover:border-accent/30 transition-all duration-300 h-full
@@ -273,12 +325,12 @@ function App() {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  AI Language & Cultural Assistant
+                  Travel Buddy
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                   An advanced AI-powered companion for language learning and cultural understanding. 
                   Combines AR technology, real-time translation, and cultural insights to create an 
-                  immersive language learning and cultural adaptation experience.
+                  immersive language learning and cultural adaptation experience for travelers.
                 </p>
                 
                 <div className="space-y-2">
@@ -365,7 +417,7 @@ function App() {
               </div>
             </div>
 
-            {/* OTP Generator Project - Future Project */}
+            {/* OTP Manager Project - Future Project */}
             <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
                            rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
                            hover:border-accent/30 transition-all duration-300 h-full
@@ -375,7 +427,7 @@ function App() {
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                  OTP Generator & Validator
+                  OTP Manager
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                   A secure, scalable OTP (One-Time Password) generation and validation system designed for 

@@ -1,8 +1,11 @@
 import './App.css';
 import profileImage from './profile.png'; // Update this path
 import { useState, useEffect, useRef } from 'react';
+import { InlineWidget } from 'react-calendly';
 
 function App() {
+  const [showCalendly, setShowCalendly] = useState(false);
+
   const [darkMode, setDarkMode] = useState(() => {
     // Check local storage or system preference
     if (typeof window !== 'undefined') {
@@ -23,108 +26,58 @@ function App() {
       title: "About Me",
       content: (
         <header className="w-[95%] sm:w-[90%] mx-auto p-3 sm:px-4 py-4 sm:py-8 relative">
-          <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark rounded-xl sm:rounded-2xl 
-                         border border-gray-200 dark:border-white/5 p-3 sm:p-6">
-            <div className="relative flex flex-col items-center md:flex-row md:items-start gap-4 sm:gap-6 md:gap-8">
-              {/* Profile Section */}
-              <div className="md:order-2 w-full md:w-auto flex justify-center">
-                <div className="relative w-32 sm:w-40 md:w-48 shrink-0 animate-fadeIn animation-delay-300">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-light rounded-xl sm:rounded-2xl 
-                                blur opacity-50 group-hover:opacity-75 transition duration-1000 z-0
-                                animate-pulse"></div>
-                  <img 
-                    src={profileImage} 
-                    alt="Professional headshot"
-                    className="relative rounded-xl sm:rounded-2xl w-full object-cover z-10 shadow-xl
-                             transform transition-all duration-500 hover:scale-105"
-                  />
-                </div>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">
+            <div className="flex flex-col items-center">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg">
+                <img 
+                  src={profileImage} 
+                  alt="Vishwas Parameshwarappa" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-
-              {/* Content Section */}
-              <div className="space-y-3 text-sm flex-1 md:order-1 w-full">
-                <div className="mb-4 sm:mb-6 border-b border-gray-200 dark:border-white/10 pb-4 sm:pb-6">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 
-                               bg-gradient-to-r from-gray-900 dark:from-white to-accent 
-                               bg-clip-text text-transparent tracking-tight
-                               animate-slideDown text-center md:text-left">
-                    Vishwas Parameshwarappa
-                  </h1>
-                  <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 dark:text-accent-light mb-3 sm:mb-4 tracking-wide
-                               animate-slideDown animation-delay-200 text-center md:text-left">
-                    Senior Technology Leader & Innovation Expert
-                  </h2>
-                  
-                  {/* Contact Links */}
-                  <div className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-4 text-xs sm:text-sm text-gray-700 dark:text-gray-200 mt-3 sm:mt-4
-                                animate-slideDown animation-delay-300">
-                    <a href="tel:+12146816166" 
-                       className="hover:text-accent transition-all duration-300 flex items-center gap-1 sm:gap-2 
-                                hover:scale-105 hover:translate-x-1 transform">
-                      <span className="text-accent">📞</span> +1(214) 681-6166
-                    </a>
-                    <a href="mailto:mail.vishwasp@gmail.com" 
-                       className="hover:text-accent transition-all duration-300 flex items-center gap-1 sm:gap-2 
-                                hover:scale-105 hover:translate-x-1 transform">
-                      <span className="text-accent">📧</span> mail.vishwasp@gmail.com
-                    </a>
-                    <a href="https://www.linkedin.com/in/vishwasparameshwarappa" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       className="hover:text-accent transition-all duration-300 flex items-center gap-1 sm:gap-2 
-                                hover:scale-105 hover:translate-x-1 transform">
-                      <span className="text-accent">🔗</span> LinkedIn
-                    </a>
-                    <a href="/resume.pdf" 
-                       download
-                       className="hover:text-accent transition-all duration-300 flex items-center gap-1 sm:gap-2 
-                                hover:scale-105 hover:translate-x-1 transform">
-                      <span className="text-accent">📄</span> Download Resume
-                    </a>
-                    <a href="https://calendly.com/mail-vishwasp" 
-                       target="_blank"
-                       rel="noopener noreferrer" 
-                       className="hover:text-accent transition-all duration-300 flex items-center gap-1 sm:gap-2 
-                                hover:scale-105 hover:translate-x-1 transform">
-                      <span className="text-accent">📅</span> Schedule Meeting
-                    </a>
-                  </div>
-                </div>
-                
-                {/* About Section */}
-                <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700 dark:text-gray-300 
-                              animate-slideUp animation-delay-500 text-left">
-                  <p>
-                    As a Senior Director of IT with 15+ years of experience at Verizon, 
-                    I've led numerous large-scale transformation initiatives and driven 
-                    technological innovation across the organization.
-                  </p>
-                  <p>
-                    My journey from Software Engineer to Sr Director, reflects my commitment to excellence and continuous growth 
-                    in technology leadership. 
-                  </p>
-                  <p>
-                    Feel free to explore some of the projects I've worked on during my free time and the technologies I've used.
-                  </p>
-                </div>
-                
-                {/* Expertise Section */}
-                <div className="animate-slideUp animation-delay-700 text-left">
-                  <p className="font-semibold text-accent mt-6 sm:mt-8 mb-3 sm:mb-4">Key Focus Areas</p>
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                    {/* Expertise items with adjusted spacing for mobile */}
-                    <span className="expertise-item">Digital Transformation Leadership</span>
-                    <span className="expertise-item">Cloud & Infrastructure Modernization</span>
-                    <span className="expertise-item">Enterprise Architecture</span>
-                    <span className="expertise-item">Technology Innovation & AI Strategy</span>
-                    <span className="expertise-item">Strategic Vendor Management</span>
-                    <span className="expertise-item">Operations & Service Excellence</span>
-                    <span className="expertise-item">Sales Quote to Cash Systems</span>
-                    <span className="expertise-item">Order Management & Fulfillment</span>
-                    <span className="expertise-item">Service Management Systems</span>
-                    <span className="expertise-item">IT Governance & Risk Management</span>
-                  </div>
-                </div>
+              
+              {/* Schedule a Call button under profile pic */}
+              <button 
+                onClick={() => setShowCalendly(true)}
+                className="mt-4 px-4 py-2 bg-accent hover:bg-accent-light text-white text-sm font-semibold rounded-lg transition-colors duration-300 inline-flex items-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Schedule a Call
+              </button>
+            </div>
+            
+            <div className="flex-1 text-center md:text-left">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                Vishwas Parameshwarappa
+              </h1>
+              <p className="mt-2 text-lg text-accent font-medium">
+                Senior Technology Leader
+              </p>
+              <p className="mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed w-full">
+                With over 15 years of experience in technology leadership, I specialize in building 
+                innovative products that solve complex business problems. My expertise spans 
+                across leading global teams across Point of Sale Systems, Order Management Systems, Service Management Systems, AI/ML, 
+                Cloud architecture, and Digital transformation.  
+              </p>
+              <p className="mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed w-full">
+                Feel free to schedule a call to discuss how I can help your business and go over my portfolio projects which I build during my free time.
+              </p>
+              
+              <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+                <a href="https://linkedin.com/in/vishwasparameshwarappa" target="_blank" rel="noopener noreferrer" 
+                   className="p-2 bg-glass-light dark:bg-glass-dark rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="mailto:mail.vishwasp@gmail.com" 
+                   className="p-2 bg-glass-light dark:bg-glass-dark rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -384,6 +337,18 @@ function App() {
     return () => observer.disconnect();
   }, [visibleSections, sections.length]);
 
+  // Add this function to handle ESC key to close modal
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.keyCode === 27) setShowCalendly(false);
+    };
+    window.addEventListener('keydown', handleEsc);
+    
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-primary-light dark:bg-primary-dark transition-all duration-500">
       {/* Theme Toggle - more accessible on mobile */}
@@ -432,6 +397,26 @@ function App() {
           className="w-full h-20 flex items-center justify-center"
         >
           <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-accent"></div>
+        </div>
+      )}
+
+      {/* Add this modal overlay for Calendly */}
+      {showCalendly && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-xl w-full max-w-4xl h-[650px] relative">
+            <button 
+              onClick={() => setShowCalendly(false)}
+              className="absolute top-2 right-2 z-10 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+            >
+              <svg className="w-6 h-6 text-gray-700 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <InlineWidget 
+              url="https://calendly.com/mail-vishwasp" 
+              styles={{height: '100%', width: '100%'}}
+            />
+          </div>
         </div>
       )}
     </div>

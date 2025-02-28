@@ -1,9 +1,32 @@
-- 👋 Hi, I’m Vishwas
-- 👀 I’m interested in Emerging Tech
-- 🌱 I’m currently learning Generative AI
-- 📫 Reach me at: mail.vishwasp@gmail.com
+# Portfolio Project
 
-<!---
-git-vishwasp/git-vishwasp is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+This repository contains both the frontend and backend code for my portfolio website.
+
+## Structure
+- `/ui` - React frontend application
+- `/server` - Backend server application
+
+## Setup Instructions
+
+### Frontend (UI)
+
+1. Navigate to the `ui` directory:
+   ```bash
+   cd ui
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000` to view the portfolio.
+
+### Backend (Server)
+
+Coming soon...

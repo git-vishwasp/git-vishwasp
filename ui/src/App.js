@@ -364,6 +364,57 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* OTP Generator Project - Future Project */}
+            <div className="backdrop-blur-sm bg-glass-light dark:bg-glass-dark p-4 sm:p-6 
+                           rounded-xl sm:rounded-2xl border border-gray-200 dark:border-white/5 
+                           hover:border-accent/30 transition-all duration-300 h-full
+                           relative opacity-75 hover:opacity-100">
+              <div className="absolute top-3 right-3 bg-gray-500 text-white text-xs px-2 py-1 rounded-full">
+                Coming Soon
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+                  OTP Generator & Validator
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                  A secure, scalable OTP (One-Time Password) generation and validation system designed for 
+                  enterprise authentication needs. Features time-based and counter-based OTPs with 
+                  configurable validity periods and robust security measures.
+                </p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    TOTP & HOTP Implementation
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Configurable Validity Windows
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Rate Limiting & Brute Force Protection
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <span className="text-accent">✓</span>
+                    Multi-channel Delivery (SMS, Email, Push)
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Node.js</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Express</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Redis</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">JWT</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Twilio API</span>
+                    <span className="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent">Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       )
